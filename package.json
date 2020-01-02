@@ -1,0 +1,42 @@
+{
+  "name": "electron-oc",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --max_old_space_size=4096",
+    "dist": "electron-builder --ia32"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build": {
+    "appId": "electron-oc-test",
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage",
+      "maintainer": "abc@yopmail.com",
+      "category": "Internet"
+    }
+  },
+  "author": "ABC",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "4.2.10",
+    "electron-rebuild": "^1.8.8",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "electron-log": "^4.0.0",
+    "ffi": "^2.3.0",
+    "ref-array": "^1.2.0",
+    "ref-struct": "^1.1.0",
+    "windows-build-tools": "^5.2.2"
+  }
+}
